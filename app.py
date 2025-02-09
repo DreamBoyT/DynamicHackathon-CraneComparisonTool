@@ -81,6 +81,11 @@ def main():
         5. **Download Report**: Download the PDF report with detailed information.
         """)
 
+    # Sample Data Download Button
+    sample_data_url = "https://drive.google.com/uc?export=download&id=1pCXYaS6pM-DJzsjLi5Gqm6cKLjZbPJYv"
+    if st.sidebar.button("📥 Download Sample Data"):
+        st.sidebar.markdown(f'<a href="{sample_data_url}" download="sample_crane_data.csv">Click here to download the sample data</a>', unsafe_allow_html=True)
+
     # File Upload
     st.sidebar.header("Upload Crane Dataset")
     uploaded_file = st.sidebar.file_uploader(
