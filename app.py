@@ -5,16 +5,15 @@ from io import BytesIO
 from fpdf import FPDF
 import plotly.express as px
 import json
-import os
 
 # Set Page Configuration (default layout)
 st.set_page_config(page_title="Crane Comparison & Decision Support Tool")
 
 # Azure OpenAI LLM Credentials
-azure_endpoint = os.getenv("AZURE_ENDPOINT")
-api_key = os.getenv("API_KEY")
-api_version = "2024-10-01-preview"
-model = "gpt-4o-mini"  
+azure_endpoint = st.secrets["AZURE_ENDPOINT"]
+api_key = st.secrets["API_KEY"]
+api_version = st.secrets["API_VERSION"]
+model = st.secrets["MODEL"]
 
 # LLM Query Function
 def query_llm(prompt):
