@@ -16,6 +16,7 @@ Design a web-based platform for comparing cranes based on operational parameters
 - Sample Data
 - Contributing
 - License
+- Live Demo
 
 ## Introduction
 The **Crane Comparison & Decision Support Tool** is a web-based platform designed to help users compare cranes based on various operational parameters. It provides recommendations for safe lifting operations, ensuring optimal equipment usage.
@@ -45,3 +46,38 @@ Follow these steps to set up the project locally.
 3. **Install the dependencies:**
     ```sh
     pip install -r requirements.txt
+    ```
+
+4. **Run the application:**
+    ```sh
+    streamlit run app.py
+    ```
+
+## Usage
+1. **Upload Crane Dataset:**
+    - Upload your crane dataset in CSV format using the sidebar.
+
+2. **Input Requirements:**
+    - Enter the load weight, wind speed, and radius in the sidebar.
+
+3. **Get Recommendations:**
+    - Click the "Get Recommendations" button to receive crane recommendations.
+
+4. **View Results:**
+    - View the filtered crane data and recommendations on the main page.
+
+5. **Download Report:**
+    - Download the PDF report with detailed crane data and recommendations.
+
+## Sample Data
+A sample crane dataset is provided in the `data/` directory. You can use this dataset to test the application.
+
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+This project is licensed under the MIT License.
+
+## Live Demo
+You can test the application live at the following link:
+Crane Comparison & Decision Support Tool
